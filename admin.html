@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <h1>JDAS HR Panel</h1>
+                <div class="butsection">
+                   <a href="subscription.html"><button id="subs-btn">Subscription</button></a> 
+                    <button id="logout-btn">Logout</button>
+                    
+                    </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="sidebar">
+                <button class="tablink" onclick="openTab('candidate-info')">Candidate Info</button>
+                <button class="tablink" onclick="openTab('hired')">Hired</button>
+            </div>
+
+            <div class="workspace">
+                <div id="candidate-info" class="tab-content">
+                    <h2>Candidate Info</h2>
+                        <div class="card-container">
+
+
+                            <div class="user-card">
+                                <div class="card-content">
+                                    <h2 class="user-name">Joshil Bari</h2>
+                                    <p class="job-profile">Frontend Developer</p>
+                                    <div class="marks">
+                                        <span class="marks-label">Marks:</span>
+                                        <span class="marks-value">20/20</span>
+                                    </div>
+                                    <div class="card-btn">
+                                    <button class="cv-btn">View CV</button>
+                                    <button class="hire-btn">Hire Now</button>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="user-card">
+                                <div class="card-content">
+                                    <h2 class="user-name">Ronit Bhatra</h2>
+                                    <p class="job-profile">UI/UX Designer</p>
+                                    <div class="marks">
+                                        <span class="marks-label">Marks:</span>
+                                        <span class="marks-value">19/20</span>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button class="cv-btn">View CV</button>
+                                        <button class="hire-btn">Hire Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-card">
+                                <div class="card-content">
+                                    <h2 class="user-name">Jaivesh Vaidya</h2>
+                                    <p class="job-profile">Backend Developer</p>
+                                    <div class="marks">
+                                        <span class="marks-label">Marks:</span>
+                                        <span class="marks-value">16/20</span>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button class="cv-btn">View CV</button>
+                                        <button class="hire-btn">Hire Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="user-card">
+                                <div class="card-content">
+                                    <h2 class="user-name">Athang Masawkar</h2>
+                                    <p class="job-profile">Backend Developer</p>
+                                    <div class="marks">
+                                        <span class="marks-label">Marks:</span>
+                                        <span class="marks-value">20/20</span>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button class="cv-btn">View CV</button>
+                                        <button class="hire-btn">Hire Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                   </div>
+
+
+                <div id="hired" class="tab-content">
+                    <h2>Assign Personalised WorkFlow</h2>
+
+                    <div class="hired-container">
+
+
+                        <div class="user-card">
+                            <div class="card-body">
+                                <h2 class="candidate-name">Athang Masawkar</h2>
+                                <p class="candidate-profile">Backend Developer</p>
+                        
+                                <div class="skills-section">
+                                    <label>
+                                        <input type="checkbox" name="java"> Java Development
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="python"> Python
+                                    </label>
+                                </div>
+                        
+                                <button class="mail-btn">Mail Now</button>
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+
+        // Default open Candidate Info tab
+        window.onload = function() {
+            openTab('candidate-info');
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IT Fields</title>
+  <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="/HTML/index_Main.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="field-container">
+      <h2>Select a Field</h2>
+      <div class="field-grid">
+        <button class="field-button" onclick="showField('web-development')">
+          <img src="web.png" alt="Web Development"> Web Development
+        </button>
+        <button class="field-button" onclick="showField('software-development')">
+          <img src="sw.png" alt="Software Development"> Software Development
+        </button>
+        <button class="field-button" onclick="showField('data-science')">
+          <img src="web.png" alt="Data Science"> Data Science
+        </button>
+        <button class="field-button" onclick="showField('cybersecurity')">
+          <img src="cyber.png" alt="Cybersecurity"> Cybersecurity
+        </button>
+        <button class="field-button" onclick="showField('ui-ux-design')">
+          <img src="web.png" alt="UI/UX Design"> UI/UX Design
+        </button>
+      </div>
+    </div>
+    <br>
+
+    <div class="field-details" id="field-details">
+      <h2>Field Details</h2>
+      <p>Select a field to see more information.</p>
+    </div>
+    
+  </main>
+
+  <footer>
+    &copy; 2024 JDAS
+  </footer>
+
+  <script src="questions.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Detail Page</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <header>
+        <a href="company-landing-page.html" class="logo">Company Logo</a>
+        <h1>Candidate Detail Page</h1>
+    </header>
+
+    <main>
+        <section class="candidate-info">
+            <h2>Candidate Information</h2>
+            <div class="details">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="details">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="details">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="details">
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+        </section>
+
+        <section class="job-preferences">
+            <h2>Job Preferences</h2>
+            <div class="details">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+            <div class="details">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="details">
+                <label for="experience">Experience Level:</label>
+                <select id="experience" name="experience" required>
+                    <option value="entry-level">Entry-Level</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="details">
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+        </section>
+
+        <section class="submit">
+            <button type="submit"><a href="questions.html">Application</a></button>
+        </section>
+    </main>
+    <br>
+    <br>
+
+    <footer>
+        &copy; 2024 JDAS
+    </footer>
+
+    <script src="details.js"></script>
+</body>
+</html>
